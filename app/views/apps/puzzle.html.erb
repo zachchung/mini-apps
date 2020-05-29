@@ -1,0 +1,40 @@
+<div class="puzzle-body">
+<table>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>6</td>
+      <td>7</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>10</td>
+      <td>11</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>14</td>
+      <td class="empty"></td>
+      <td>15</td>
+    </tr>
+  </table>
+  <!-- Cheat end -->
+
+  <button id="show-hint" class="btn btn-primary">Give me a hint</button>
+
+  <div class="hint">
+    <p>
+      Reorder the tiles by ascending order. Good luck!
+    </p>
+  </div>
+</div>
+<%= link_to "wagon race", race_path, class: "btn btn-primary d-flex justify-content-center" %>
+ <%#= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+<%= javascript_pack_tag 'puzzle' %>
