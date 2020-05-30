@@ -1,0 +1,18 @@
+<div class="container text-center p-3">
+  <form id="search">
+    <input type="text" id="input" placeholder="Type an address">
+    <input type="submit" value="Geocode!" class="btn btn-primary btn-sm">
+  </form>
+
+  <!-- display results -->
+  <ul id="results" class="list-inline"></ul>
+
+  <!-- display mapbox map -->
+  <div class="d-flex justify-content-center">
+    <div id="mapbox" style="height: 300px; width: 600px"></div>
+  </div>
+</div>
+
+<%= link_to "home", root_path, class: "btn btn-primary" %>
+
+<%= javascript_pack_tag 'geocode_app' %>

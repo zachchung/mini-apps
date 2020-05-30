@@ -1,0 +1,18 @@
+<div class="container">
+  <h1>Result</h1>
+
+  <!-- Method 2: if/else at view (can use <strong>) -->
+  <% if @msg == "not in grid" %>
+    <p>Sorry but <strong><%= @word %></strong> can't be built out of <%= @letters %></p>
+  <% else %>
+    <!-- Method 1: if/else at controller (can't use <strong>): -->
+    <p><%= @msg %></p>
+  <% end %>
+
+  <p>Your score is: <%= @score %></p>
+
+  <%= link_to "Play again", newgame_path %>
+
+  <%= link_to "home", root_path, class: "btn btn-primary" %>
+</div>
+

@@ -1,0 +1,52 @@
+.puzzle-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+
+  table {
+    width: 550px;
+    background: #691b1b;
+    border-radius: 5px;
+  }
+
+  tr {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+  }
+
+  td {
+    width: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin: 1px;
+    background: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    border-radius: 5px;
+    background: white;
+    transition: all 1s ease;
+  }
+
+  .empty {
+    background: #691b1b;
+  }
+
+  button {
+    margin-top: 40px;
+  }
+
+  .hint {
+    margin-top: 16px;
+    opacity: 0;
+    transition: .3s opacity ease;
+  }
+
+  .hint.active {
+    opacity: 1;
+  }
+}

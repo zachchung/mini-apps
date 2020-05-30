@@ -7,12 +7,26 @@
     <title>MiniApps</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <!-- mapbox CSS -->
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.2.1/mapbox-gl.css' rel='stylesheet' />
+        <!-- select2 -->
+    <!-- <link rel="stylesheet" href="node_modules/select2/dist/css/select2.css"> -->
+    <%#= stylesheet_link_tag 'application', 'node_modules/select2/dist/css/select2.css' %>
+    <%#= stylesheet_link_tag 'application', 'https://api.tiles.mapbox.com/mapbox-gl-js/v1.2.1/mapbox-gl.css' %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-8">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

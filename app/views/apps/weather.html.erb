@@ -1,0 +1,23 @@
+<!-- Select 2 -->
+<div class="d-flex justify-content-center align-items-center mb-3"> <!-- Center -->
+  <select id="city-input" class="select2"></select>
+  <button id="btn" class="btn btn-primary btn-sm ml-2" style="width: 200px">Get the weather</button>
+</div>
+
+<!-- Display results here: -->
+<div class="card p-3"> <!-- Card -->
+  <h1> Weather in <span id="city"></span></h1>
+  <h2 id="time"></h2>
+  <p id="description"></p>
+  <div class="d-flex align-items-center"> <!-- Side by side -->
+    <img src="" id="icon" height="50" width="50"> <!-- !!!!!!!! -->
+    <h3><span id="temperature"></span> °C</h3>
+  </div>
+
+  <!-- Get current weather button -->
+  <button id="current-location" class="btn btn-success w-100 mt-3">Get current weather in your city</button>
+</div>
+
+<%= link_to "home", root_path, class: "btn btn-primary" %>
+
+<%= javascript_pack_tag 'weather_app' %>

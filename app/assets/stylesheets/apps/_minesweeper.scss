@@ -1,0 +1,56 @@
+/* CSS classes you can use on your table td to display the relevant tile */
+#minesweeper {
+  margin: auto;
+  margin-top: 3em;
+  border: 1px solid #999;
+  border-collapse: collapse;
+
+  /* Positioning the Minesweep table and make sure the cells are square */
+  td {
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+  }
+
+  td.unopened {
+    background-image: asset-url('unopened.svg');
+    cursor: pointer;
+  }
+  td.mine-neighbour-0 {
+    background-image: asset-url('opened.svg');
+  }
+  td.flagged {
+    background-image: asset-url('flag.svg');
+  }
+  td.question {
+    background-image: asset-url('question.svg');
+  }
+  td.mine {
+    background-image: asset-url('mine.png');
+  }
+  td.mine-neighbour-1 {
+    background-image: asset-url('1.svg');
+  }
+  td.mine-neighbour-2 {
+    background-image: asset-url('2.svg');
+  }
+  td.mine-neighbour-3 {
+    background-image: asset-url('3.svg');
+  }
+  td.mine-neighbour-4 {
+    background-image: asset-url('4.svg');
+  }
+  td.mine-neighbour-5 {
+    background-image: asset-url('5.svg');
+  }
+  td.mine-neighbour-6 {
+    background-image: asset-url('6.svg');
+  }
+  td.mine-neighbour-7 {
+    background-image: asset-url('7.svg');
+  }
+  td.mine-neighbour-8 {
+    background-image: asset-url('8.svg');
+  }
+}
+

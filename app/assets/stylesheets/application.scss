@@ -8,6 +8,22 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
-// Your CSS partials
+@import "select2/dist/css/select2"; /* picks it up in node_modules! */
+// <link rel="stylesheet" href="node_modules/select2/dist/css/select2.css">
+
+
+// Your CSS partials (components)
 @import "components/index";
-@import "pages/index";
+// @import "pages/index";
+
+
+// Page specific:
+@import "apps/minesweeper";
+@import "apps/race";
+@import "apps/puzzle";
+@import "games/new";
+
+@import "apps/geocode";
+// <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.2.1/mapbox-gl.css' rel='stylesheet' />
+
+// @import "https://api.tiles.mapbox.com/mapbox-gl-js/v1.2.1/mapbox-gl.css"
