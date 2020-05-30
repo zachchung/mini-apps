@@ -24,8 +24,6 @@ tiles.forEach((tile) => {
   });
 });
 
-
-
 const canMove = (tile) => {
   const tileColumn = tile.cellIndex; // column index
   const tileRow = tile.parentElement.rowIndex; // row index (need to go up one lvl -> tr tag)
@@ -82,6 +80,3 @@ const checkIfPlayerWins = () => {
     alert("You won!")
   }
 };
-
-
-export { canMove, moveTile, checkIfPlayerWins };

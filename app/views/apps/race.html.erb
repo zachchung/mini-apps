@@ -4,7 +4,7 @@
 <hr>
 <!-- You race HTML code here -->
 
-<table class="racer-table">
+<table id="racer-table">
   <tr id="player1-race">
     <td class="active"></td>
     <td></td>
@@ -37,3 +37,4 @@
 <input type="text"></input>
 
 <%= link_to "home", root_path, class: "btn btn-primary" %>
+<%= javascript_pack_tag 'race_app' %>
