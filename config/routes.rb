@@ -8,6 +8,6 @@ Rails.application.routes.draw do
   get 'weather', to: "apps#weather"
   get 'minesweeper', to: "apps#minesweeper"
 
-  get 'newgame', to: 'games#new'
-  post 'score', to: 'games#score'
+  get 'wordgame', to: 'games#new'
+  post 'wordgame', to: 'games#score' # => same url but display diff (diplayed page determined by controller)
 end
