@@ -17,8 +17,7 @@ class GamesController < ApplicationController
     # Pass to view-score (instance variables)
     @msg = hash_result(@word, @letters)[:msg]
     # Store at session (~cookies/ cache) instead of DB:
-    session[:score] += hash_result(@word, @letters)[:score]
-    @score = session[:score]
+    session[:score].nil? ? session[:score] = 0 : @total_score = session[:score] += hash_result(@word, @letters)[:score]
   end
 
   private
